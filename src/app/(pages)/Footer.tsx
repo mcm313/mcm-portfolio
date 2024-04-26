@@ -3,7 +3,7 @@ import CopyrightIcon from "@/components/Icons/Copyright";
 const Footer = () => {
   return (
     <section
-      id="skills"
+      id="footer"
       className="bg-lime-50 pt-[25px] px-6 text-black flex justify-center items-center overflow-y-hidden w-full bg-cover"
     >
       <div className="flex w-full justify-end text-xs items-center gap-1">
