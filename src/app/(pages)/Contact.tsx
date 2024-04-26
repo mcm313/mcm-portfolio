@@ -5,9 +5,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-lime-50 pt-[25px] px-6 text-black border border-black min-h-[360px] max-w-[1000px] flex justify-center items-center overflow-y-hidden w-full bg-cover"
+      className="bg-lime-50 pt-[25px] px-6 text-black min-h-[360px] max-w-[1000px] flex justify-center items-center overflow-y-hidden w-full bg-cover"
     >
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center">
         <p className="text-4xl font-semibold pb-6">CONTACT</p>
         <p className="text-LG font-semibold">Feel free to contact me!</p>
         <div className="flex gap-2 py-10">
