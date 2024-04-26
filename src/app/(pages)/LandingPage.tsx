@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import DownloadIcon from "../../components/Icons/downloadIcon";
 import GithubIcon from "@/components/Icons/githubIcon";
@@ -32,11 +33,13 @@ const LandingPage = () => {
         <div className="relative top-1/2">
           <div className="border absolute h-1/2 border-black -top-10 -right-10 w-1/2"></div>
           <div className="border absolute h-1/2 border-black -bottom-10 -left-10 w-1/2"></div>
-          <img
+          <Image
             src="/images/profile_pic.jpg"
             alt="profile pic"
             width={400}
             height={400}
+            loading="eager"
+            priority
             className="relative z-10 border-black border"
           />
         </div>
