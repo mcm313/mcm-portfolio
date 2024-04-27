@@ -15,11 +15,13 @@ const config: Config = {
       },
       gridTemplateRows: {
         "4": "repeat(4, minmax(0, 1fr))",
+        "14": "repeat(14, minmax(0, 1fr))",
         "15": "repeat(15, minmax(0, 1fr))",
       },
       gridTemplateColumns: {
         "3": "repeat(3, minmax(0, 1fr))",
         "15": "repeat(15, minmax(0, 1fr))",
+        "21": "repeat(21, minmax(0, 1fr))",
       },
     },
   },
