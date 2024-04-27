@@ -311,26 +311,26 @@ const Skills = () => {
       className="bg-lime-50 pt-[25px] px-6 text-black h-min min-h-[670px] max-w-[1000px] flex justify-center items-center overflow-y-hidden w-full bg-cover"
     >
       <div className="flex flex-col gap-10 py-6">
-        <div className="grid grid-cols-21 grid-rows-14 gap-1 text-lg">
+        <div className="grid grid-cols-21 grid-rows-14 gap-1 text-xl">
           {skillCW.map((letter, index) =>
             answercw.includes(index) ? (
               <div
                 key={index}
-                className=" border font-medium aspect-square border-gray-400 flex justify-center items-center"
+                className=" border font-medium w-8 h-8 border-gray-400 flex justify-center items-center"
               >
                 {letter}
               </div>
             ) : skillcw.includes(index) ? (
               <div
                 key={index}
-                className=" border font-extrabold aspect-square border-gray-400 flex justify-center items-center"
+                className=" border font-extrabold w-8 h-8 border-gray-400 flex justify-center items-center"
               >
                 {letter}
               </div>
             ) : (
               <div
                 key={index}
-                className=" aspect-square flex justify-center items-center"
+                className=" flex justify-center w-8 h-8 items-center"
               ></div>
             )
           )}
