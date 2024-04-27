@@ -323,7 +323,7 @@ const Skills = () => {
             ) : skillcw.includes(index) ? (
               <div
                 key={index}
-                className=" border font-extrabold text-4xl aspect-square border-gray-400 flex justify-center items-center"
+                className=" border font-extrabold aspect-square border-gray-400 flex justify-center items-center"
               >
                 {letter}
               </div>
