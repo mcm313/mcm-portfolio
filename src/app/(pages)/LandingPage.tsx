@@ -17,11 +17,15 @@ const LandingPage = () => {
             <p>MARIA CATHERINE</p>
             <p>MORI</p>
           </div>
+          <p className="text-2xl pt-2 font-semibold">I am Frontend Developer</p>
           <div className="flex gap-3 items-center pt-6">
-            <Link href="" target="_blank">
+            <Link href="https://github.com/mcm313" target="_blank">
               <GithubIcon className="h-6 w-6" />
             </Link>
-            <Link href="" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/maria-catherine-mori-1729b7227/"
+              target="_blank"
+            >
               <LinkedinIcon className="h-6 w-6" />
             </Link>
             <button className="flex border rounded-full p-2">
@@ -31,17 +35,18 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="relative top-1/2">
-          <div className="border absolute h-1/2 border-black -top-10 -right-10 w-1/2"></div>
-          <div className="border absolute h-1/2 border-black -bottom-10 -left-10 w-1/2"></div>
-          <Image
-            src="/images/profile_pic.jpg"
-            alt="profile pic"
-            width={400}
-            height={400}
-            loading="eager"
-            priority
-            className="relative z-10 border-black border"
-          />
+          <div className="border absolute h-1/2 border-black rounded-lg -top-10 -right-10 w-1/2"></div>
+          <div className="border absolute h-1/2 border-black rounded-lg -bottom-10 -left-10 w-1/2"></div>
+          <div className="relative z-10 border-black border rounded-lg size-96 object-cover">
+            <Image
+              src="/images/profile_pic.jpg"
+              alt="profile pic"
+              fill
+              loading="eager"
+              priority
+              className="h-[400px] w-[400px] rounded-lg object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>

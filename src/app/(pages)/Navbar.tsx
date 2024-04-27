@@ -1,31 +1,19 @@
 "use client";
 
 import { useState } from "react";
-
-interface Option {
-  label: string;
-  value: string;
-}
+import Link from "next/link";
 
 const options = [
-  { label: "About", value: "About" },
-  { label: "My Skills", value: "Skills" },
-  { label: "Portfolio", value: "Portfolio" },
-  { label: "Contact", value: "Contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About Me", href: "/#aboutme" },
+  { label: "My Skills", href: "/#skills" },
+  { label: "Resume", href: "/#resume" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const Navbar = () => {
-  const handleSelect = (option: { label: string; value: string }) => {
-    console.log("Selected option:", option);
-    // You can perform any action here with the selected option
-  };
-
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleSelectOption = (option: Option) => {
-    handleSelect(option);
-    setIsOpen(false);
-  };
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-lime-50 border-b">
@@ -33,13 +21,12 @@ const Navbar = () => {
       <div className="md:flex gap-6 justify-end px-6 hidden">
         {options.map((option, index) => (
           <div key={index} className="flex">
-            <button
-              key={option.value}
-              onClick={() => handleSelectOption(option)}
+            <Link
+              href={option.href}
               className="block p-0.5 text-sm text-black hover:italic w-full self-center"
             >
               {option.label}
-            </button>
+            </Link>
           </div>
         ))}
       </div>
@@ -52,13 +39,12 @@ const Navbar = () => {
           <div className="absolute z-10 mt-4 p-6 top-1/2 gap-1 w-52 bg-transparent flex flex-col items-center">
             {options.map((option, index) => (
               <div key={index} className="flex">
-                <button
-                  key={option.value}
-                  onClick={() => handleSelectOption(option)}
+                <Link
+                  href={option.href}
                   className="block p-0.5 text-sm text-black hover:italic w-full self-center"
                 >
                   {option.label}
-                </button>
+                </Link>
               </div>
             ))}
           </div>
