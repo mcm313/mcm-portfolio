@@ -10,8 +10,8 @@ const LandingPage = () => {
       id="home"
       className="bg-lime-50 pt-[25px] px-6 text-black h-screen min-h-[670px] max-w-[1000px] flex justify-center items-center overflow-y-hidden w-full bg-cover"
     >
-      <div className="flex justify-center items-center">
-        <div className="pr-20">
+      <div className="flex flex-col md:flex-row justify-center items-center">
+        <div className="pr-20 md:pb-0 pb-16">
           <div className="text-4xl font-semibold">
             <p>I AM</p>
             <p>MARIA CATHERINE</p>

@@ -311,19 +311,19 @@ const Skills = () => {
       className="bg-lime-50 pt-[25px] px-6 text-black h-min min-h-[670px] max-w-[1000px] flex justify-center items-center overflow-y-hidden w-full bg-cover"
     >
       <div className="flex flex-col gap-10 py-6">
-        <div className="grid grid-cols-21 grid-rows-14 gap-1 text-xl">
+        <div className="grid grid-cols-21 grid-rows-14 gap-1">
           {skillCW.map((letter, index) =>
             answercw.includes(index) ? (
               <div
                 key={index}
-                className=" border font-medium w-8 h-8 border-gray-400 flex justify-center items-center"
+                className=" border font-medium w-8 h-8 text-lg border-gray-400 flex justify-center items-center"
               >
                 {letter}
               </div>
             ) : skillcw.includes(index) ? (
               <div
                 key={index}
-                className=" border font-extrabold w-8 h-8 border-gray-400 flex justify-center items-center"
+                className=" border font-extrabold w-8 h-8 text-lg pt-0.5 border-gray-400 flex justify-center items-center"
               >
                 {letter}
               </div>

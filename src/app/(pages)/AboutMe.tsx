@@ -6,21 +6,23 @@ const AboutMe = () => {
       id="aboutme"
       className="bg-lime-50 pt-[25px] px-6 text-black h-min min-h-[670px] max-w-[1000px] flex justify-center items-center overflow-y-hidden w-full bg-cover"
     >
-      <div className="flex items-center justify-center gap-6 p-6">
-        <div className="w-1/2 relative rounded-lg size-[500px] object-cover">
+      <div className="flex md:flex-row flex-col items-center justify-center gap-6 p-6">
+        <div className="w-1/2 relative size-[400px] object-cover">
           <Image
             src="/images/about_me_pic.jpg"
             alt="about me pic"
             fill
             loading="eager"
             priority
-            className="h-[400px] w-[400px] rounded-lg object-cover"
+            className="h-[400px] w-[400px] md:rounded-lg rounded-full object-cover"
           />
         </div>
 
-        <div className="w-1/2">
-          <p className="text-4xl text-right font-semibold pb-6">HELLO,</p>
-          <p className="text-lg font-medium">
+        <div className="md:w-1/2 z-10 w-full text-center">
+          <p className="text-4xl md:text-right font-semibold md:pb-16 pb-6">
+            ABOUT ME
+          </p>
+          <p className="text-lg font-medium md:text-left">
             I am a front-end developer based in Tokyo, Japan. I am a
             career-shifter, from being a financial analyst to a web developer.
             Since moving to Japan, I have been having difficulties applying to
