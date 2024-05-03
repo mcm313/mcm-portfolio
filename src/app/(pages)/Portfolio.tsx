@@ -80,14 +80,14 @@ const Portfolio: React.FC = () => {
   return (
     <section
       id="portfolio"
-      className="bg-lime-50 pt-[25px] px-6 text-black md:h-96 h-min min-h-[670px] max-w-[1000px] flex justify-center items-center overflow-y-hidden w-full bg-cover"
+      className="bg-lime-50 text-navy-blue pt-[25px] px-6 md:h-96 h-min min-h-[670px] max-w-[1000px] flex justify-center items-center overflow-y-hidden w-full bg-cover"
     >
       <div className="flex flex-col w-full h-full p-6 items-center ">
-        <p className="md:text-4xl text-2xl font-semibold">PORTFOLIO</p>
-        <div className="flex md:flex-row flex-col w-full gap-4 h-full p-10">
+        <p className="md:text-4xl text-2xl font-extrabold">PORTFOLIO</p>
+        <div className="flex md:flex-row flex-col w-full gap-4 h-full p-10 text-lime-50">
           <div className="md:w-1/3 w-full flex flex-col gap-4 p-0">
             <HoverButton
-              className="md:h-1/2 md:justify-between"
+              className="md:h-1/2 md:justify-between bg-bold-pink"
               defaultContent={
                 <div className="p-2">
                   <p className="md:text-4xl text-2xl font-extrabold">
@@ -102,7 +102,7 @@ const Portfolio: React.FC = () => {
               project={projects[0]}
             />
             <HoverButton
-              className="md:h-1/2 md:justify-center"
+              className="md:h-1/2 md:justify-center bg-pale-yellow"
               defaultContent={
                 <div className="p-2">
                   <p className="md:text-4xl text-2xl font-extrabold md:text-end">
@@ -119,7 +119,7 @@ const Portfolio: React.FC = () => {
           </div>
           <div className="md:w-1/3 w-full flex flex-col gap-4">
             <HoverButton
-              className="md:h-2/3 md:justify-center md:items-center"
+              className="md:h-2/3 md:justify-center md:items-center bg-navy-blue"
               defaultContent={
                 <div className="p-2">
                   <p className="md:text-4xl text-2xl font-extrabold">
@@ -134,7 +134,7 @@ const Portfolio: React.FC = () => {
               project={projects[5]}
             />
             <HoverButton
-              className="md:h-1/3 md:justify-end md:items-end"
+              className="md:h-1/3 md:justify-end md:items-end bg-light-pink"
               defaultContent={
                 <div className="p-2">
                   <p className="md:text-4xl text-2xl font-extrabold">
@@ -151,7 +151,7 @@ const Portfolio: React.FC = () => {
           </div>
           <div className="md:w-1/3 w-full flex flex-col gap-4">
             <HoverButton
-              className="md:h-1/3 md:items-center md:justify-end"
+              className="md:h-1/3 md:items-center md:justify-end bg-pale-yellow"
               defaultContent={
                 <div className="p-2">
                   <p className="md:text-4xl text-2xl font-extrabold">
@@ -166,7 +166,7 @@ const Portfolio: React.FC = () => {
               project={projects[2]}
             />
             <HoverButton
-              className="md:h-2/3 md:justify-center"
+              className="md:h-2/3 md:justify-center bg-bold-pink"
               defaultContent={
                 <div className="p-2">
                   <p className="md:text-4xl text-2xl font-extrabold md:text-end">

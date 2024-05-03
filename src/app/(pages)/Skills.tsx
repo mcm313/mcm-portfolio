@@ -322,7 +322,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="bg-lime-50 pt-[25px] px-6 text-black h-min min-h-[670px] max-w-[1000px] flex justify-center items-center overflow-y-hidden overflow-x-hidden w-full bg-cover"
+      className="bg-lime-50 text-navy-blue pt-[25px] px-6 h-min min-h-[670px] max-w-[1000px] flex justify-center items-center overflow-y-hidden overflow-x-hidden w-full bg-cover"
     >
       <div className="md:flex flex-col hidden gap-10 md:py-6">
         <div className="grid grid-cols-21 grid-rows-14 gap-1">
@@ -330,14 +330,14 @@ const Skills = () => {
             answercw.includes(index) ? (
               <div
                 key={index}
-                className=" border font-medium md:w-8 md:h-8 md:text-lg w-6 h-6 text-sm border-gray-400 flex justify-center items-center"
+                className="border border-navy-blue font-semibold md:w-8 md:h-8 md:text-lg w-6 h-6 text-sm flex justify-center items-center text-bold-pink"
               >
                 {letter}
               </div>
             ) : skillcw.includes(index) ? (
               <div
                 key={index}
-                className=" border font-extrabold md:w-8 md:h-8 md:text-lg w-6 h-6 text-sm pt-0.5 border-gray-400 flex justify-center items-center"
+                className=" border font-extrabold border-pale-yellow md:w-8 md:h-8 md:text-lg w-6 h-6 text-sm pt-0.5 flex justify-center items-center"
               >
                 {letter}
               </div>
@@ -351,14 +351,16 @@ const Skills = () => {
         </div>
       </div>
       <div className="flex flex-col md:hidden gap-10 py-6">
-        <p className="absolute right-1/4 text-4xl font-semibold">SKILLS</p>
+        <p className="absolute right-1/4 text-4xl font-semibold text-pale-yellow">
+          SKILLS
+        </p>
         <div className="flex flex-col gap-1">
           {skillsList.map((skill, index) => (
             <div key={index} className="flex gap-1">
               {skill.split("").map((letter, index) => (
                 <div
                   key={index}
-                  className="border font-medium md:w-8 md:h-8 md:text-lg w-6 h-6 text-sm border-gray-400 flex  justify-center items-center"
+                  className="border font-medium md:w-8 md:h-8 md:text-lg w-6 h-6 text-sm border-bold-pink text-navy-blue flex  justify-center items-center"
                 >
                   {letter}
                 </div>

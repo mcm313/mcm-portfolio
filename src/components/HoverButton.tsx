@@ -34,7 +34,7 @@ const HoverButton: React.FC<{
 
   return (
     <div
-      className={`h-32 border hover:cursor-pointer border-black rounded-md flex flex-col ${className}`}
+      className={`h-32 border hover:cursor-pointer border-navy-blue rounded-md flex flex-col ${className}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={openModal}

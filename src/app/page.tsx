@@ -9,7 +9,7 @@ import Skills from "./(pages)/Skills";
 
 export default function Home() {
   return (
-    <div className="bg-lime-50 relative flex w-full flex-col items-center justify-center overflow-x-hidden overflow-y-hidden">
+    <div className="bg-light-green relative flex w-full flex-col items-center justify-center overflow-x-hidden overflow-y-hidden">
       <Navbar />
       <LandingPage />
       <AboutMe />

@@ -18,7 +18,7 @@ const DownloadCVButton: React.FC<{ className?: string }> = ({
   return (
     <button
       onClick={() => downloadCV()}
-      className="flex border rounded-full p-2 md:text-base text-xs"
+      className="flex border rounded-full p-2 md:text-base text-xs bg-bold-pink text-lime-50"
     >
       <DownloadIcon className={`${className}`} />
       Download CV

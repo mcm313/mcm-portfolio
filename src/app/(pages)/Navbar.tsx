@@ -17,7 +17,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-lime-50 border-b">
+    <nav className="fixed top-0 w-full z-50 bg-light-green text-navy-blue border border-b-pale-yellow font-medium">
       {/* for desktop */}
       <div className="md:flex gap-6 justify-end px-6 hidden">
         {options.map((option, index) => (
@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="md:hidden justify-end flex">
         <button onClick={() => setIsOpen(!isOpen)} className="text-black pr-9">
           <p className="font-lg font-semibold">
-            <MenuIcon className="h-8 w-8" />
+            <MenuIcon className="h-8 w-8 text-navy-blue" />
           </p>
         </button>
         {isOpen && (
