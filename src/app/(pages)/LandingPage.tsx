@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <section
       id="home"
-      className="bg-light-green pt-[25px] text-navy-blue h-screen min-h-[670px] max-w-[1000px] overflow-y-hidden overflow-x-hidden w-full bg-cover"
+      className="bg-light-green text-navy-blue h-screen min-h-[670px] max-w-[1000px] overflow-y-hidden overflow-x-hidden"
     >
       <div className="relative w-full h-full flex justify-center items-center">
         <div className="absolute bg-falling-petals bg-repeat opacity-30 bg-center inset-0"></div>
