@@ -54,7 +54,7 @@ const projects = [
   },
   {
     name: "Codebility",
-    skills: ["NextJS", "Tailwind"],
+    skills: ["NextJS", "Tailwind", "Typescript"],
     tag: "Codebility",
     link: "https://www.codebility.tech",
     desc: "The main website of the company",
