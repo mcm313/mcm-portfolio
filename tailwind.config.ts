@@ -13,6 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         flower: "url('/flower-pattern.jpg')",
+        "falling-petals": "url('/sakura-leaves.gif')",
       },
       gridTemplateRows: {
         "4": "repeat(4, minmax(0, 1fr))",

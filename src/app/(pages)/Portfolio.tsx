@@ -34,7 +34,7 @@ const projects = [
     tag: "Personal",
     link: "https://expense-tracker-h7ek.onrender.com",
     desc: "A website ledger for your own personal use. Also can convert from USD, Peso, Yen.",
-    src: "/images/100bucketlist.png",
+    src: "/images/expense_tracker.png",
   },
   {
     name: "MCM Portfolio",
@@ -63,7 +63,7 @@ const projects = [
 ];
 
 const hoverContent = (src: string): React.ReactNode => (
-  <div className="relative size-full bg-black">
+  <div className="relative size-full bg-light-green">
     <Image
       src={src}
       alt="project pic"

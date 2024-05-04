@@ -10,10 +10,14 @@ interface ProjectProps {
 
 const ProjectModal: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <div className="rounded-r-lg border-black flex flex-col gap-2 border-double border-4 text-pretty  md:p-4 p-1 mb-4 w-full">
-      <h1 className="md:text-3xl text-xl font-bold mb-4">{project.name}</h1>
-      <p className="md:text-xl text-base font-semibold mb-2">{project.tag}</p>
-      <div className="flex md:gap-0.5 md:text-base text-xs font-medium">
+    <div className="rounded-lg border-pale-yellow flex flex-col gap-2 border-double border-4 text-pretty md:p-4 p-1 px-0 w-full text-navy-blue">
+      <h1 className="md:text-3xl text-xl w-full p-1 mb-0 rounded-full bg-light-yellow font-bold">
+        {project.name}
+      </h1>
+      <p className="md:text-xl text-base font-semibold mb-1 p-1 pt-0">
+        {project.tag}
+      </p>
+      <div className="flex md:gap-0.5 md:text-base text-xs p-1 font-medium">
         {project.skills.map((skill, index) => (
           <div key={index}>
             <div className="flex content-center justify-center">
@@ -23,15 +27,15 @@ const ProjectModal: React.FC<ProjectProps> = ({ project }) => {
           </div>
         ))}
       </div>
-      <p className="md:text-base text-xs">{project.desc}</p>
-      <div className="relative md:size-60 size-32 bg-black">
+      <p className="md:text-base text-xs p-1 pb-0">{project.desc}</p>
+      <div className="relative md:w-96 md:h-64 h-44 w-full rounded-lg border-bold-pink border-4">
         <Image
           src={project.src}
           alt="project pic"
           fill
           loading="eager"
           priority
-          className="h-[400px] w-[400px] object-contain"
+          className="h-[400px] w-[400px] object-cover"
           sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"
         />
       </div>
