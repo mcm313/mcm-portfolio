@@ -1,5 +1,6 @@
 import EmailIcon from "@/components/Icons/EmailIcon";
 import LinkedinIcon from "@/components/Icons/linkedinIcon";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -13,18 +14,25 @@ const Contact = () => {
           Feel free to contact me!
         </p>
         <div className="flex md:flex-row flex-col items-center md:items-start gap-2 py-10">
-          <div className="flex items-center md:w-1/2 w-full justify-center">
+          <Link
+            href="https://www.linkedin.com/in/maria-catherine-mori-1729b7227/"
+            target="_blank"
+            className="flex items-center md:w-1/2 w-full justify-center"
+          >
             <LinkedinIcon className="md:h-20 w-1/3 h-10 text-light-green" />
             <p className="md:text-lg text-sm font-semibold p-0 w-2/3">
               linkedin.com/in/maria-catherine-mori-1729b7227/
             </p>
-          </div>
-          <div className="flex items-center justify-center md:w-1/2 w-full">
+          </Link>
+          <Link
+            href="mailto:mori.mcatherine@gmail.com"
+            className="flex items-center justify-center md:w-1/2 w-full"
+          >
             <EmailIcon className="md:h-20 w-1/3 h-10 text-light-green" />
             <p className="md:text-lg text-sm font-semibold w-2/3">
               mori.mcatherine@gmail.com
             </p>
-          </div>
+          </Link>
         </div>
         <p className="md:text-lg text-sm font-semibold">
           THANKS FOR YOUR PATIENCE
